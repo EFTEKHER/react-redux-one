@@ -36,6 +36,12 @@ reducers:{
             todoUpdate.text=newText;
             console.log('updated');
         }
+
+    }
+    ,
+    getId:(state,action)=>{
+        const id=action.payload;
+        return id;
     }
 }
 })
